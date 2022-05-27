@@ -14,6 +14,7 @@ import { HeaderComponent } from './pastas/header/header.component';
 import { GaleriaComponent } from './pastas/galeria/galeria.component';
 import { SobreComponent } from './pastas/sobre/sobre.component';
 import { FooterComponent } from './pastas/footer/footer.component';
+import { MinhaContaComponent } from './views/minha-conta/minha-conta.component';
 
 @NgModule({
   declarations: [

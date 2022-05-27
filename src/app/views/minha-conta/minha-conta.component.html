@@ -1,0 +1,52 @@
+<section class="cadastro container margem-topo">
+    <form #formLogin="ngForm" (ngSubmit)="onSubmitLogin()">
+        <div>
+            <h2>Entrar em minha conta</h2>
+            <p class="margem-topo">
+                <label for="email">E-mail</label><br>
+                <input type="email" id="email" name="email" [(ngModel)]="usuarioLogin.email" />
+            </p>
+            <p class="margem-topo">
+                <label for="senha">Senha</label><br>
+                <input type="password" id="senha" name="senha" [(ngModel)]="usuarioLogin.password" />
+            </p>
+            <div class="margem-topo cadastro-lembrar">
+                <div class="oculto-pp">
+                    <label class="check-titulo">
+                        Ficar conectado
+                        <input type="checkbox">
+                        <span class="check-controle"></span>
+                    </label>
+                </div>
+                <div>
+                    <a href="#">Esqueci minha senha</a>
+                </div>
+            </div>
+            <div *ngIf="mensagemLogin != ''" class="margem-topo erro">
+                <span>{{ mensagemLogin }}</span>
+            </div>
+            <button class="margem-topo" type="submit">Entrar</button>
+        </div>
+    </form>
+    <form #formCadastro="ngForm" (ngSubmit)="onSubmitCadastro()">
+        <div>
+            <h2>Cadastrar</h2>
+            <p class="margem-topo">
+                <label for="nome">Nome completo</label><br>
+                <input type="text" id="nome" name="nome" [(ngModel)]="usuarioCadastro.name" />
+            </p>
+            <p class="margem-topo">
+                <label for="email2">E-mail</label><br>
+                <input type="email" id="email2" name="email2" [(ngModel)]="usuarioCadastro.email" />
+            </p>
+            <p class="margem-topo">
+                <label for="senha2">Senha</label><br>
+                <input type="password" id="senha2" name="senha2" [(ngModel)]="usuarioCadastro.password" />
+            </p>
+            <div *ngIf="mensagemCadastro != ''" class="margem-topo erro">
+                <span>{{ mensagemCadastro }}</span>
+            </div>
+            <button class="margem-topo" type="submit">Cadastrar</button>
+        </div>
+    </form>
+</section>

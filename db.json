@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "email": "test@email.com",
+      "password": "xxxxx",
+      "id":1 
+    },
+    {
+      "email": "test@email.com",
+      "password":"xxxxx",
+      "name": "Marlon Trindade",
+      "id":2
+    },
+    {
+      "email":"test2@email.com",
+      "password":"xxxxx",
+      "name":"Teste 2",
+      "id":3
+    },
+    {
+      "email":"test3@email.com",
+      "password":"xxxxx",
+      "name":"Teste 3",
+      "id":4
+    }
+  ],
+  "produtos": [
+    {
+      "titulo": "Fones de ouvido JBL",
+      "preco": "R$ 750",
+      "imagem": "assets/fonejbl.png",
+      "id": 1
+    },
+    {
+      "titulo": "Jogo Fifa",
+      "preco": "R$ 350",
+      "imagem": "assets/fifa22.png",
+      "id": 2
+    },
+    {
+      "titulo": "Controles",
+      "preco": "R$ 450",
+      "imagem": "assets/Controles.png",
+      "id": 3
+    }
+  ]
+}
